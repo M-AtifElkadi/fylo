@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+.row {
+    padding: 30px;
+}
+
+
+ul li a {
+    text-decoration-line: none;
+}
+
+li {
+    display: inline;
+    color: grey;
+    padding-left: 20px;
+    list-style: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.image {max-width: 450px;}
+.row::after {
+    content:"";
+    display: table;
+    clear:both;
+} 
+
+
+.input1 {height: 28px;}
+.input2 {height: 28px; margin-top: 30px;}
+.button1 {height: 29px; background-color: blue; color: white; margin-left: 5px;}
+.button2 {height: 29px; background-color: blue; color: white; margin-top: 10px; border: blue;}
+.back-image {
+    background-image: url("./images/bg-curve-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 70px;
+}
+
+.twit {
+    background-color: white;
+    width: 50%;
+    padding: 15px;
+    border: 5px solid whitesmoke;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 95px;
+}
+
+.avatar-cont {
+    display: inline-flex; 
+}
+
+.sec-a {
+    padding-bottom: 70px;
+    background-color: hsl(238, 22%, 44%);
+}
+
+p{
+    padding-right: 150px;
+}
+.sec-b {
+    padding-top: 70px;
+    background-color: hsl(243, 87%, 12%);
+    color: white;
+}
+
+.sec-b a {
+    text-decoration-line: none;
+    color: white; 
+} 
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h3 {
+        font-family: 'Raleway', sans-serif;
+    }
+  
+/* For mobile phones: */
+[class*='col-'] {
+    width: 100%;
+    float: left;
+} 
+
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+#header {
+    margin-bottom: 80px;
+    display: flex;
+}
+.left {width: 75%;}
