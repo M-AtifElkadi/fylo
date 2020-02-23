@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-*, 
+/**, 
 *:before, 
 *:after {
   box-sizing: inherit;
-}
+}*/
 .row {
-    padding: 30px;
+    padding: 40px;
 }
 
 
@@ -22,10 +22,11 @@ ul li a {
 li {
     display: inline;
     color: grey;
-    padding-left: 20px;
     list-style: none;
+    text-align: center;
 }
 
+.nav {margin: 0;}
 .responsive {
     width: 100%;
     height: auto;
@@ -39,10 +40,10 @@ li {
 } 
 
 
-.input1 {height: 28px;}
-.input2 {height: 28px; margin-top: 30px;}
-.button1 {height: 29px; background-color: blue; color: white; margin-left: 5px;}
-.button2 {height: 29px; background-color: blue; color: white; margin-top: 10px; border: blue;}
+input {height: 28px; border-radius: 4px;}
+.input2 {margin-top: 30px;}
+.button1 {margin-left: 10px;}
+.button2 {margin-top: 10px;}
 .back-image {
     background-image: url("./images/bg-curve-desktop.svg");
     background-size: cover;
@@ -57,6 +58,7 @@ li {
     width: 50%;
     padding: 15px;
     border: 5px solid whitesmoke;
+    border-radius: 4%;
 }
 
 .avatar {
@@ -75,30 +77,64 @@ li {
 
 p{
     padding-right: 150px;
+    color: hsl(238, 22%, 44%);
 }
 .sec-b {
     padding-top: 70px;
     background-color: hsl(243, 87%, 12%);
-    color: white;
 }
+
+.sec-b p {color: hsl(240, 75%, 98%);}
 
 .sec-b a {
     text-decoration-line: none;
-    color: white; 
+    color: hsl(240, 75%, 98%);
 } 
+
+.link {
+    color: hsl(170, 45%, 43%);
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    font-weight: 400;
 }
 h1, h3 {
         font-family: 'Raleway', sans-serif;
+        font-weight: 700; 
     }
-  
+h2 {color: hsl(240, 75%, 98%);}    
+
+h1 {color: hsl(243, 87%, 12%);}
+
+.sec-a p {color: hsl(0, 0%, 75%);}
+
+
+
+.logo-2 path {
+    fill: #fff;
+}
+
+
+
 /* For mobile phones: */
 [class*='col-'] {
     width: 100%;
     float: left;
 } 
+
+@media only screen and (max-width: 767px) {
+    .left {width: 33.33%;}
+    .right {width: 66.67%;}
+    .nav-li {width: 33.33%;}
+    .row {padding: 10px;}
+    .button1 {margin-top: 10px; margin-left: unset;}
+    .main-logo {
+    width: 80px;
+    height: 25px;
+    }
+}
 
   @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -118,6 +154,15 @@ h1, h3 {
 
 #header {
     margin-bottom: 80px;
-    display: flex;
+    display: flex; 
 }
-.left {width: 75%;}
+
+button {
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    height: 28px;
+}
+
+
