@@ -40,7 +40,7 @@ li {
 } 
 
 
-input {height: 28px; border-radius: 4px;}
+input {height: 34px; border-radius: 2px; box-shadow:0 0 3px rgb(224, 220, 220) inset; border: 1px solid black;}
 .input2 {margin-top: 30px;}
 .button1 {margin-left: 10px;}
 .button2 {margin-top: 10px;}
@@ -91,8 +91,10 @@ p{
     color: hsl(240, 75%, 98%);
 } 
 
-.link {
+.link, .link p {
     color: hsl(170, 45%, 43%);
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 body {
@@ -103,6 +105,7 @@ body {
 h1, h3 {
         font-family: 'Raleway', sans-serif;
         font-weight: 700; 
+        
     }
 h2 {color: hsl(240, 75%, 98%);}    
 
@@ -115,6 +118,8 @@ h1 {color: hsl(243, 87%, 12%);}
 .logo-2 path {
     fill: #fff;
 }
+
+.span{padding-left: 15px;}
 
 
 
@@ -134,6 +139,7 @@ h1 {color: hsl(243, 87%, 12%);}
     width: 80px;
     height: 25px;
     }
+
 }
 
   @media only screen and (min-width: 768px) {
@@ -162,7 +168,9 @@ button {
     color: white;
     border-radius: 2px;
     border: none;
-    height: 28px;
+    height: 35px;
+    box-shadow:0 0 3px rgb(224, 220, 220) inset;
+    text-shadow: darkgray;
 }
 
 
