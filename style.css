@@ -89,7 +89,7 @@ input {
     border-radius: 2px;
     font-size: 14px;
     /*box-shadow:0 0 3px rgb(224, 220, 220) inset;*/
-    border: 1px solid black;
+    border: 2px solid rgb(153, 153, 153);
 }
 
 .width-100 {
@@ -97,7 +97,7 @@ input {
 }
 
 input::placeholder {
-    color: #aaa;
+    color: rgb(187, 183, 183);
 }
 
 button {
@@ -125,6 +125,10 @@ button {
     padding-top: 70px;
     padding-bottom: 70px;
     margin-top: 70px;
+}
+
+.padding-lift {
+    padding-right: 160px;
 }
 
 .link {
