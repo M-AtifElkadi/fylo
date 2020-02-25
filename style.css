@@ -199,16 +199,10 @@ h6 {
 /*.button1 {margin-left: 10px;}*/
 .button2 {margin-top: 10px;}
 
-
-
-
-
-
 .sec-a {
     padding-bottom: 70px;
     background-color: hsl(238, 22%, 44%);
 }
-
 
 .sec-b {
     padding-top: 70px;
@@ -222,11 +216,9 @@ h6 {
     color: hsl(240, 75%, 98%);
 } 
 
-
-
 body {
     font-family: 'Open Sans', sans-serif;
-    margin: 0px;
+    /*margin: 0px;*/
     font-weight: 400;
 }
 h1, h3 {
@@ -236,21 +228,13 @@ h1, h3 {
     }
 h2 {color: hsl(240, 75%, 98%);}    
 
-
-
-
 .sec-a p {color: hsl(0, 0%, 75%);}
-
-
 
 .logo-2 path {
     fill: #fff;
 }
 
 .span{padding-left: 15px;}
-
-
-
 
 [class*='col-'] {
     width: 100%;
