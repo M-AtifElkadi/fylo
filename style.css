@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-/**, 
-*:before, 
-*:after {
-  box-sizing: inherit;
-}*/
-
 .container {
     padding-left: 8px;
     padding-right: 8px;
@@ -49,6 +43,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 0;
 }
 
 .nav-li{
@@ -88,7 +83,6 @@ input {
     line-height: 24px;
     border-radius: 2px;
     font-size: 14px;
-    /*box-shadow:0 0 3px rgb(224, 220, 220) inset;*/
     border: 2px solid rgb(153, 153, 153);
 }
 
@@ -105,12 +99,23 @@ button {
     color: white;
     border-radius: 2px;
     border: none;
-    box-shadow:0 0 3px rgb(224, 220, 220) inset;
     text-shadow: darkgray;
     padding: 12px 46px;
     font-size: 15px;
     line-height: 24px;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: white;
+    color: hsl(224, 93%, 58%);
+    border: 1px solid hsl(224, 93%, 58%);
+}
+
+button:active {
+    background-color: hsl(224, 93%, 58%);
+    transform: translateY(2px);
+    color: white;
 }
 
 .responsive {
@@ -137,7 +142,6 @@ button {
     border-bottom: 1px solid hsl(170, 45%, 43%);
     padding-bottom: 4px;
     line-height: 28px;
-    /*text-underline-position: under;*/
 }
 
 .arrow {
@@ -188,25 +192,42 @@ h6 {
     margin-top: 70px;
 }
 
-/*.image {max-width: 450px;}*/
 .row::after {
     content:"";
     display: table;
     clear:both;
 } 
 
-.input2 {margin-top: 30px;}
-/*.button1 {margin-left: 10px;}*/
-.button2 {margin-top: 10px;}
+.width-75 {
+    width: 75%;
+}
+.width-33 {
+    width: 33.33%;
+    padding: 12px 24px;
+}
 
-.sec-a {
+.footer-1st-section {
+    padding-left: 8px;
+    padding-right: 8px;
     padding-bottom: 70px;
+    padding-top: 70px;
     background-color: hsl(238, 22%, 44%);
 }
 
-.sec-b {
+.footer-2nd-section {
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 70px;
     background-color: hsl(243, 87%, 12%);
+}
+
+.margin-top-8 {
+    margin-top: 8px;
+}
+
+.margin-bottom-8 {
+    margin-bottom: 8px;
+    margin-top: 20px;
 }
 
 .sec-b p {color: hsl(240, 75%, 98%);}
@@ -216,9 +237,22 @@ h6 {
     color: hsl(240, 75%, 98%);
 } 
 
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.social-icons li {
+    margin: 0 10px;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
-    /*margin: 0px;*/
+    margin: 0;
     font-weight: 400;
 }
 h1, h3 {
@@ -231,7 +265,7 @@ h2 {color: hsl(240, 75%, 98%);}
 .sec-a p {color: hsl(0, 0%, 75%);}
 
 .logo-2 path {
-    fill: #fff;
+    color: #fff;
 }
 
 .span{padding-left: 15px;}
@@ -247,14 +281,46 @@ h2 {color: hsl(240, 75%, 98%);}
 @media only screen and (max-width: 767px) {
     .left {width: 33.33%;}
     .right {width: 66.67%;}
-    .nav-li {width: 33.33%;}
-    .row {padding: 10px;}
     .button1 {margin-top: 10px; margin-left: unset;}
     .main-logo {
     width: 80px;
     height: 25px;
     }
+    .nav-li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1{
+        text-align: center;
+        padding: unset !important;
+    }
 
+    p{
+        padding: unset !important;
+        }
+    button, input, .width-100 {
+        width: 90%;
+        margin: auto;
+    }
+    .width-75, .width-33 {
+        width: 75%;
+    }
+   .col-6 {text-align: center;}
+
+   .border-bottom{text-align: center;}
+    .twit {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .footer-2nd-section {padding-left: 20px; padding-right: 20px;}
+
+    .social {
+        justify-content: center;
+    }
+    .social-icons {
+        padding: unset;
+    }
 }
 
   @media only screen and (min-width: 768px) {
@@ -274,9 +340,5 @@ h2 {color: hsl(240, 75%, 98%);}
   }
 
 #header {
-    /*margin-bottom: 80px;*/
     display: flex; 
 }
-
-
-
